@@ -1,27 +1,13 @@
 ## Goal
 The goal of this demo is to show how a web server is run inside of a container
 
-## Create project
-```
-dotnet new mvc -n Example
-```
-
-## Move to directory
-```
-cd ./Example
-```
-
-## Delete the HTTPS redirection
-```
-startup.cs
-app.UseHttpsRedirection();
-```
-
 ## Create docker file
 ```
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
 
-COPY out .
+WORKDIR /app
+
+COPY --from=build /app/out .
 
 ENTRYPOINT [ "dotnet", "Example.dll" ]
 ```
@@ -46,5 +32,32 @@ Explain that the application is running inside of the container on localhost, or
 
 ## Run the container properly
 ```
-docker run -it --rm --name -p 5000:80 netcorecontainer netcorelocal
+docker run -it --rm -p 5000:80 --name netcorecontainer netcorelocal
 ```
+
+## This sucks balls, let's improve on it
+
+## Multi-stage that docker file
+```
+FROM mcr.microsoft.com/dotnet/core/sdk:3.0 as build
+
+WORKDIR /app
+
+COPY . .
+
+RUN dotnet publish -o out
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
+
+WORKDIR /app
+
+COPY --from=build /app/out .
+
+ENTRYPOINT [ "dotnet", "Example.dll" ]
+```
+
+## Change something
+```
+Change the Home/Index.cshtml to show that fancy HQ gif
+```
+
