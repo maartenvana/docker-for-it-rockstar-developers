@@ -1,2 +1,2 @@
 # Docker for IT Rockstar Developers
-This repository contains all the Demo's and Slides for the Docker for IT Rockstar Developers talk
+This repository contains all the demo's and slides for the "Docker for IT Rockstar Developers" talk
