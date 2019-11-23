@@ -29,27 +29,28 @@
 - Time: ??
 
 ## 8. Healthchecks
-- NOT Completed
+- Completed
 - Time: ??
 
 ## 9. Using Docker Compose
 - NOT Completed
 - Time: ??
 
-- Simple wordpress done
-- Need to create a own one (development environment -> startup dependencies)
-- Demo overrides of compose files
+- Simple wordpress = done
+- Need to create a own one (development environment -> startup dependencies MYSQL)
+
 
 ## 10. Integration Testing
 - NOT Completed
 - Time: ??
+- Demo overrides of compose files -> do it in 10
+- Need to Create an integration test for a web app that uses a database
+  - This should be way closer to the realworld
+  - Just use docker-compose
 - Created C# project with docker api demo
   - Haven't figured out yet why its not building the container -> "pipe is broken"
   - Maybe abandon the docker api since it can be very specific
   - Or instead of creating containers with the docker api, just create the dependencies like MySQL and keep this as a bonus "10.2" demo?
-- Need to Create an integration test for a web app that uses a database
-  - This should be way closer to the realworld
-  - Just use docker-compose
 
 ## Bonus: 11. Pushing to a registry
 - NOT Completed
