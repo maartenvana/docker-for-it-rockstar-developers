@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  orderingexample:
-    image: ${DOCKER_REGISTRY-}orderingexample
-    build:
-      context: .
-      dockerfile: OrderingExample/Dockerfile

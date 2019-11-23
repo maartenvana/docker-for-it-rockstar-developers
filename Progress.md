@@ -21,14 +21,11 @@
 - Time: ??
 
 ## 6. Ordering statements
-- NOT Completed
+- Completed
 - Time: ??
-- Not sure about this example yet
-- Maybe do something with apt-get commands?
-- Visualize the impact.
 
 ## 7. Volumes
-- NOT Completed
+- Completed
 - Time: ??
 
 ## 8. Healthchecks
@@ -38,8 +35,9 @@
 ## 9. Using Docker Compose
 - NOT Completed
 - Time: ??
+
 - Simple wordpress done
-- Need to create a own one
+- Need to create a own one (development environment -> startup dependencies)
 - Demo overrides of compose files
 
 ## 10. Integration Testing
@@ -48,6 +46,7 @@
 - Created C# project with docker api demo
   - Haven't figured out yet why its not building the container -> "pipe is broken"
   - Maybe abandon the docker api since it can be very specific
+  - Or instead of creating containers with the docker api, just create the dependencies like MySQL and keep this as a bonus "10.2" demo?
 - Need to Create an integration test for a web app that uses a database
   - This should be way closer to the realworld
   - Just use docker-compose

@@ -1,5 +1,7 @@
-## Goal
+# Goal
 The goal of this demo is to show how a web server is run inside of a container
+
+# Steps
 
 ## Create docker file
 ```
@@ -7,7 +9,7 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.0
 
 WORKDIR /app
 
-COPY --from=build /app/out .
+COPY out .
 
 ENTRYPOINT [ "dotnet", "Example.dll" ]
 ```
@@ -61,3 +63,8 @@ ENTRYPOINT [ "dotnet", "Example.dll" ]
 Change the Home/Index.cshtml to show that fancy HQ gif
 ```
 
+## Explain how this improves 2 of things
+- You don't need to have a certain version of the SDK installed (on your build agent)
+- The final image size is drastically smaller
+```
+```
