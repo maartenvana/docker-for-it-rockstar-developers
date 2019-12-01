@@ -33,12 +33,8 @@
 - Time: ??
 
 ## 9. Using Docker Compose
-- NOT Completed
+- Completed
 - Time: ??
-
-- Simple wordpress = done
-- Need to create a own one (development environment -> startup dependencies MYSQL)
-
 
 ## 10. Integration Testing
 - NOT Completed
@@ -62,3 +58,4 @@
 - Time the demo's!
 - Make sure all demo's focus on the important part (docker!), low/no code -> keep it docker focussed
 - Would be cool to use a js based presentation framework-thing but that might take up too much time.
+- Add next steps in presentation.
