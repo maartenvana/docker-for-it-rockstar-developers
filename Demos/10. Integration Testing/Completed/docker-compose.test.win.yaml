@@ -1,0 +1,6 @@
+version: '3.3'
+
+services:
+  integration_test:
+    volumes:
+      - "c:/temp/testresults:/var/temp"

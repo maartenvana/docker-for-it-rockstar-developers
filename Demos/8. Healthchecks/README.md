@@ -5,7 +5,6 @@
 
 # Steps
 
-
 ## Add the health check
 ```
 HEALTHCHECK --interval=5s --retries=3 --start-period=5s --timeout=3s \

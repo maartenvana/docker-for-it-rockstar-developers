@@ -41,6 +41,8 @@
 - Time: ??
 
 ## Bonus 12. Using the docker API demo
+- NOT Completed
+- Time: ??
 - Created C# project with docker api demo
   - instead of creating containers with the docker api, just pull the dependencies like MySQL and keep this as a bonus "10.2" demo?
 
@@ -55,3 +57,6 @@
 - Make sure all demo's focus on the important part (docker!), low/no code -> keep it docker focussed
 - Would be cool to use a js based presentation framework-thing but that might take up too much time.
 - Add "next steps" in presentation.
+
+- DOCKER COMPOSE: add service name?
+- demo: docker exec ?
