@@ -37,16 +37,12 @@
 - Time: ??
 
 ## 10. Integration Testing
-- NOT Completed
+- Completed
 - Time: ??
-- Demo overrides of compose files -> do it in 10
-- Need to Create an integration test for a web app that uses a database
-  - This should be way closer to the realworld
-  - Just use docker-compose
+
+## Bonus 12. Using the docker API demo
 - Created C# project with docker api demo
-  - Haven't figured out yet why its not building the container -> "pipe is broken"
-  - Maybe abandon the docker api since it can be very specific
-  - Or instead of creating containers with the docker api, just create the dependencies like MySQL and keep this as a bonus "10.2" demo?
+  - instead of creating containers with the docker api, just pull the dependencies like MySQL and keep this as a bonus "10.2" demo?
 
 ## Bonus: 11. Pushing to a registry
 - NOT Completed
@@ -58,4 +54,4 @@
 - Time the demo's!
 - Make sure all demo's focus on the important part (docker!), low/no code -> keep it docker focussed
 - Would be cool to use a js based presentation framework-thing but that might take up too much time.
-- Add next steps in presentation.
+- Add "next steps" in presentation.
