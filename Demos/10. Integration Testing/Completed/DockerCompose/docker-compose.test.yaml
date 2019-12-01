@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  integration_test:
+    build:
+      context: .
+      dockerfile: ./ExampleWebApp.IntegrationTests/Dockerfile
+    environment:
+      - BUSINESS_API_URL=http://webapp/api/business
+    depends_on:
+      - db
+      - webapp
