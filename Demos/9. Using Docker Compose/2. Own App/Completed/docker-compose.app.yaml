@@ -11,5 +11,3 @@ services:
       - ConnectionStrings__Sql=server=db;port=3306;database=webapp_dev;user=root;password=my-secret-dev-pw;
     depends_on:
       - db
-volumes:
-    db_data: {}

@@ -9,13 +9,13 @@ RUN dotnet restore "ExampleWebApp/ExampleWebApp.csproj"
 
 COPY . .
 
-RUN dotnet publish "ExampleWebApp/ExampleWebApp.csproj" -c Release -o /app/publish --no-restore
+RUN dotnet publish "ExampleWebApp/ExampleWebApp.csproj" -c Release -o out --no-restore
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.0-buster-slim AS final
 
 WORKDIR /app
 
-COPY --from=build /app/publish .
+COPY --from=build /app/out .
 
 EXPOSE 80
 EXPOSE 443

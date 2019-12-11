@@ -58,5 +58,6 @@
 - Would be cool to use a js based presentation framework-thing but that might take up too much time.
 - Add "next steps" in presentation.
 
-- DOCKER COMPOSE: add service name?
+- DOCKER COMPOSE: add service name? DO THIS ITS SCREWING THINGS UP!!!
 - demo: docker exec ?
+- alias the folder to keep it more readable?
