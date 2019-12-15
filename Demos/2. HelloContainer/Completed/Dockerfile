@@ -1,5 +1,7 @@
-FROM ubuntu
+FROM ubuntu:bionic
 
-COPY hello.sh .
+COPY hello.sh /scripts/hello.sh
 
-ENTRYPOINT [ "hello.sh" ]
+RUN chmod +x /scripts/hello.sh
+
+ENTRYPOINT [ "/scripts/hello.sh" ]

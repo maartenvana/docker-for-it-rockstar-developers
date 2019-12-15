@@ -14,6 +14,15 @@ COPY out .
 ENTRYPOINT [ "dotnet", "Example.dll" ]
 ```
 
+## Add .dockerignore
+```
+**/bin
+**/obj
+**/properties
+Dockerfile
+*.csproj.user
+```
+
 ## Publish the project
 ```
 dotnet publish -o out

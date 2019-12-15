@@ -49,10 +49,10 @@ docker build -t pythondemo .
 
 ## Run the container now without an environment variable
 ```
-docker run -it --rm pythondemocontainer pythondemo
+docker run -it --rm --name pythondemocontainer pythondemo
 ```
 
 ## Run the container now with an environment variable
 ```
-docker run -e "url=https://teamupit.nl" -it --rm pythondemocontainer pythondemo
+docker run -e "url=https://teamupit.nl" -it --rm --name pythondemocontainer pythondemo
 ```

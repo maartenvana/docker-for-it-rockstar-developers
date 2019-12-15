@@ -1,4 +1,9 @@
-!#/bin/bash
+#!/bin/bash
+
+# This makes sure we can actually kill our container when we recieve a sigterm signal
+trap "echo Exiting... INT;  exit $?" INT
+trap "echo Exiting... TERM; exit $?" TERM
+trap "echo Exiting... EXIT; exit $?" EXIT
 
 while true; do
 

@@ -1,11 +1,11 @@
 FROM python:3.8
 
-ENV url=https://google.com
-
 WORKDIR /app
 
-COPY . /app
+COPY . .
 
 RUN pip3 install -r requirements.txt
+
+ENV SITE_URL=https://google.com
 
 ENTRYPOINT [ "python", "app.py"]

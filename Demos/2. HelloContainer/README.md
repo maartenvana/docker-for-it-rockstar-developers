@@ -19,5 +19,11 @@ docker build -t helloexample .
 
 ## Run the container
 ```
-docker run -it --rm hellocontainer helloexample
+docker run -it --rm --name hellocontainer helloexample
+```
+
+## Side note for Windows users building in their CI on linux
+Add chmod run command
+```
+RUN chmod +x /scripts/hello.sh
 ```
